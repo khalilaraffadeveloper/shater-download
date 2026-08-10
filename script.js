@@ -1,20 +1,10 @@
-function switchTab(tab) {
-    const tabs = document.querySelectorAll('.tab-content');
-    tabs.forEach(function (t) { t.style.display = 'none'; });
-    document.getElementById(tab + 'Tab').style.display = '';
-
-    const btns = document.querySelectorAll('.tab-btn');
-    btns.forEach(function (b) { b.classList.remove('active'); });
-    document.querySelector('[onclick="switchTab(\'' + tab + '\')"]').classList.add('active');
-}
-
 document.addEventListener('DOMContentLoaded', function () {
-    const features = document.querySelectorAll('.feature');
-    const steps = document.querySelectorAll('.step');
+    var features = document.querySelectorAll('.feature');
+    var steps = document.querySelectorAll('.step');
 
-    const observerOptions = { threshold: 0.2 };
+    var observerOptions = { threshold: 0.2 };
 
-    const fadeObserver = new IntersectionObserver(function (entries) {
+    var fadeObserver = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
             if (entry.isIntersecting) {
                 entry.target.style.opacity = '1';

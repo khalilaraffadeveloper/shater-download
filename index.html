@@ -20,18 +20,19 @@
             <p class="app-subtitle">شاطر للسيارات</p>
         </div>
 
-        <div class="tabs">
-            <button class="tab-btn active" onclick="switchTab('driver')">تطبيق السائق</button>
-            <button class="tab-btn" onclick="switchTab('customer')">تطبيق الزبون</button>
-        </div>
-
-        <div id="driverTab" class="tab-content">
+        <div class="tab-content">
             <div class="card">
                 <div class="card-icon">
-                    <i class="bi bi-car-front"></i>
+                    <i class="bi bi-phone-fill"></i>
                 </div>
-                <h2 class="card-title">Shater — سائق</h2>
-                <p class="card-desc">تطبيق السائقين — استقبل طلبات الزبائن وتنقل بسيارتك في نواكشوط</p>
+                <h2 class="card-title">Shater</h2>
+                <p class="card-desc">تطبيق واحد بثلاثة خيارات: سائق، زبون، أو توصيل — اختر دورك من شاشة البداية</p>
+
+                <div class="roles-row">
+                    <span class="role-badge"><i class="bi bi-car-front"></i> سائق</span>
+                    <span class="role-badge"><i class="bi bi-person"></i> زبون</span>
+                    <span class="role-badge"><i class="bi bi-box-seam"></i> توصيل</span>
+                </div>
 
                 <div class="info-grid">
                     <div class="info-item">
@@ -44,7 +45,7 @@
                     </div>
                     <div class="info-item">
                         <i class="bi bi-hdd"></i>
-                        <span>~20 ميجا</span>
+                        <span>~51 ميجا</span>
                     </div>
                     <div class="info-item">
                         <i class="bi bi-shield-check"></i>
@@ -53,14 +54,14 @@
                 </div>
 
                 <p class="update-info">آخر تحديث: 10 أغسطس 2026</p>
-                <a href="Shater_Driver.apk?v=20260810g" class="download-btn">
+                <a href="Shater.apk?v=20260810h" class="download-btn">
                     <i class="bi bi-download"></i>
-                    <span>تحميل تطبيق السائق</span>
+                    <span>تحميل تطبيق شاطر</span>
                 </a>
 
-                <a href="https://wa.me/22226067036?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%AA%D8%B3%D8%AC%D9%8A%D9%84%20%D9%81%D9%8A%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B4%D8%A7%D8%B7%D8%B1%20%D9%83%D8%B3%D8%A7%D8%A6%D9%82%20%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA" target="_blank" class="register-btn">
+                <a href="https://wa.me/22226067036?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%AA%D8%B3%D8%AC%D9%8A%D9%84%20%D9%81%D9%8A%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B4%D8%A7%D8%B7%D8%B1" target="_blank" class="register-btn">
                     <i class="bi bi-whatsapp"></i>
-                    <span>التسجيل كسائق مع شاطر</span>
+                    <span>التسجيل مع شاطر</span>
                 </a>
 
                 <div class="steps">
@@ -78,48 +79,9 @@
                     </div>
                     <div class="step">
                         <span class="step-num">4</span>
-                        <p>ثبّت وسجل كسائق!</p>
+                        <p>ثبّت واختر دورك من شاشة البداية</p>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div id="customerTab" class="tab-content" style="display:none;">
-            <div class="card">
-                <div class="card-icon">
-                    <i class="bi bi-person"></i>
-                </div>
-                <h2 class="card-title">Shater — زبون</h2>
-                <p class="card-desc">تطبيق الزبون — اطلب سيارتك وتابع رحلتك في نواكشوط</p>
-
-                <div class="info-grid">
-                    <div class="info-item">
-                        <i class="bi bi-file-earmark-arrow-down"></i>
-                        <span>الإصدار: 1.0</span>
-                    </div>
-                    <div class="info-item">
-                        <i class="bi bi-android2"></i>
-                        <span>أندرويد 7.0+</span>
-                    </div>
-                    <div class="info-item">
-                        <i class="bi bi-hdd"></i>
-                        <span>~20 ميجا</span>
-                    </div>
-                    <div class="info-item">
-                        <i class="bi bi-shield-check"></i>
-                        <span>مجاني وآمن</span>
-                    </div>
-                    <div class="info-item">
-                        <i class="bi bi-cash-stack"></i>
-                        <span>دفع إلكتروني</span>
-                    </div>
-                </div>
-
-                <p class="update-info">آخر تحديث: 10 أغسطس 2026</p>
-                <a href="Shater_Customer.apk?v=20260810g" class="download-btn">
-                    <i class="bi bi-download"></i>
-                    <span>تحميل تطبيق الزبون</span>
-                </a>
             </div>
         </div>
 
@@ -156,4 +118,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
